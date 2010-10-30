@@ -1,0 +1,11 @@
+--- ncurses-1.0.1/ncurses_fe.c.orig	1970-01-01 10:13:08.000000000 +0100
++++ ncurses-1.0.1/ncurses_fe.c	2010-10-30 07:34:35.511734339 +0200
+@@ -25,7 +25,7 @@
+ #include "php_ini.h"
+ #include "php_ncurses.h"
+ 
+-#if (PHP_MAJOR_VERSION == 5 && PHP_MINOR_VERSION > 2) || PHP_MAJOR_VERSION > 5
++#if (PHP_MAJOR_VERSION == 5 && PHP_MINOR_VERSION >= 2) || PHP_MAJOR_VERSION > 5
+ # define NCURSES_ARGINFO
+ #else
+ # define NCURSES_ARGINFO static
