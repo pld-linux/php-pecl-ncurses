@@ -1,5 +1,5 @@
---- ncurses-1.0.1/ncurses_fe.c.orig	1970-01-01 10:13:08.000000000 +0100
-+++ ncurses-1.0.1/ncurses_fe.c	2010-10-30 07:34:35.511734339 +0200
+--- ncurses-1.0.2/ncurses_fe.c.orig	1970-01-01 10:13:08.000000000 +0100
++++ ncurses-1.0.2/ncurses_fe.c	2010-10-30 07:34:35.511734339 +0200
 @@ -25,7 +25,7 @@
  #include "php_ini.h"
  #include "php_ncurses.h"
