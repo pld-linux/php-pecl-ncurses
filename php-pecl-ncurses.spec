@@ -4,7 +4,7 @@ Summary:	%{_modname} - Terminal screen handling and optimization package
 Summary(pl.UTF-8):	%{_modname} - pakiet obsługi i optymalizacji terminala
 Name:		php-pecl-%{_modname}
 Version:	1.0.2
-Release:	1
+Release:	2
 License:	PHP 3.01
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
