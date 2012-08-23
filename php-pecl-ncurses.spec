@@ -4,7 +4,7 @@ Summary:	%{_modname} - Terminal screen handling and optimization package
 Summary(pl.UTF-8):	%{_modname} - pakiet obsługi i optymalizacji terminala
 Name:		php-pecl-%{_modname}
 Version:	1.0.2
-Release:	2
+Release:	3
 License:	PHP 3.01
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
@@ -15,7 +15,7 @@ BuildRequires:	ncurses-ext-devel
 BuildRequires:	php-devel >= 3:5.0.0
 BuildRequires:	rpmbuild(macros) >= 1.344
 %{?requires_php_extension}
-Requires:	php-common >= 4:5.0.4
+Requires:	php(core) >= 5.0.4
 Obsoletes:	php-ncurses
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -31,7 +31,7 @@ To rozszerzenie ma w PECL status: %{_status}.
 
 %prep
 %setup -q -c
-%patch -p0
+%patch0 -p0
 
 %build
 cd %{_modname}-%{version}
