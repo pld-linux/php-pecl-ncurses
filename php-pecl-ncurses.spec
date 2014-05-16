@@ -5,20 +5,20 @@ Summary:	%{modname} - Terminal screen handling and optimization package
 Summary(pl.UTF-8):	%{modname} - pakiet obsługi i optymalizacji terminala
 Name:		%{php_name}-pecl-%{modname}
 Version:	1.0.2
-Release:	6
+Release:	7
 License:	PHP 3.01
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
 # Source0-md5:	a466d1b3e556cda67274ba6c36239c48
 Patch0:		php-pecl-%{modname}-php52.patch
 URL:		http://pecl.php.net/package/ncurses/
-BuildRequires:	%{php_name}-devel >= 3:5.0.0
+BuildRequires:	%{php_name}-devel >= 3:5.0.4
 BuildRequires:	ncurses-ext-devel
 BuildRequires:	rpmbuild(macros) >= 1.650
 %{?requires_php_extension}
-Requires:	php(core) >= 5.0.4
 Provides:	php(%{modname}) = %{version}
 Obsoletes:	php-ncurses
+Obsoletes:	php-pecl-ncurses < 1.0.2-6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
